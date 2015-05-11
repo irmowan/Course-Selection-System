@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="CSS/button.css" rel="stylesheet" type="text/css" media="screen" />
+	<script src="JS/login.js" charset="utf-8"></script>
+	<style type="text/css">
+	.style6{
+		font-size:20px;
+		color:#FFFFFF;
+	}
+	</style>
+</head>
+<body leftmargin="0"; topmargin="0"; rightmargin="0"; bottommargin="0">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+				<td width="3%" align="center" height="70" bgcolor="#0262C1">&nbsp;</td>
+				<td width="44%" align="left" height="70" bgcolor="#0262C1">
+					<img src="IMG/logo.jpg" width="228" height="50" alt>
+				</td>
+				<td width="53%" align="left" bgcolor="#0262C1">
+					<span class="style6">学生选课系统</span>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" bgcolor="305599" height="3"></td>
+			</tr>
+		</tbody>
+	</table>
+	<table width="100%" border="0" cellpadding="0" cellspaceing="0" bgcolor="#D9ECFF">
+		<tbody>
+			<tr>
+				<td colspan="3" height="130" align="right"></td>
+			</tr>
+			<tr>
+				<td width="47%" height="36" border="0" align="right">用户名</td>
+				<td width="53%" ><input type="text" id="usname" name="username" style="border-radius:2px; border: 1px solid #474f63; width: 140px" /></td>
+			</tr>
+			<tr>
+				<td width="47%" height="36" border="0" align="right">密<font style="padding-left:17px">码</font></td>
+				<td width="53%" ><input type="password" id="pswd" name="password" style="border-radius:2px; border: 1px solid #474f63; width: 140px" /></td>
+			</tr>
+			<tr>
+				<td width="47%" height="36" border="0" align="right"></td>
+				<td width="53%" >
+					<button class="smallbutton" onclick="showUser('click')">登录</button>
+					<button class="smallbutton" onclick="Toregister()">注册</button>
+				</td>
+			</tr>
+			<tr>
+				<td width="47%" height="36" border="0" align="right"></td>
+				<td width="53%" ><p style="margin-bottom: 0px; color: red; font-size: 12px" id="loginresult">&nbsp;</p></td>	
+			</tr>	
+			<tr>
+				<td colspan="3" height="270" align="right"></td>
+			</tr>		
+			<tr>
+				<td colspan="3" height="70" align="right" bgcolor="#0262C1"></td>
+			</tr>		
+		</tbody>
+	</table>
+</body>
+</html>

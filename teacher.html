@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link href="CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="CSS/button.css" rel="stylesheet" type="text/css" media="screen" />
+	<script src="JS/teacher.js" charset="utf-8"></script>
+    <style type="text/css"> .style6{
+        font-size:20px;
+        color:#FFFFFF;
+    }
+    </style>
+
+</head>
+<body id="body">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td width="3%" align="center" height="70" bgcolor="#0262C1">&nbsp;</td>
+                <td width="44%" align="left" height="70" bgcolor="#0262C1">
+                    <img src="IMG/logo.jpg" width="228" height="50" alt>
+                </td>
+                <td width="53%" align="left" bgcolor="#0262C1">
+                    <span class="style6">教师课程管理系统</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" bgcolor="305599" height="3"></td>
+            </tr>
+        </tbody>
+    </table>
+	<div id="content" >
+            <div style = "display: none; margin-top:50px; margin-left:50px;" id = "info">  
+            </div>
+
+            <div style = "display: none; margin-top:100px; margin-left:100px;" id = "coursetable">
+            	<div id = "course"></div>
+            </div>
+
+            <div style = "display: none; margin-top:100px; margin-left:100px;" id = "mana">
+                <table>
+                    <td>我的课程</td>
+                    <td>
+                        <select id = "courseoption">
+                        </select>
+                    </td>
+                    <td><button onclick = "showdetail()">管理</button></td>
+                </table>
+
+                <table class = "hovertable" style = "display: none;" id = "coursemana">
+                </table>
+            </div>
+	</div>
+	<div id="menu">
+		<table>
+            <tr><td height="30"></td></tr>
+            <tr>
+                <td style="color:#FFFFFF; font-size:14px;">当前用户：</td>
+                <td style="color:#FFFFFF;" id="user"></td>
+            </tr>
+            <tr><td height="20"></td></tr>
+        </table>
+		<script> document.getElementById("user").innerHTML=getParam(); </script>
+		<button class="button" style="margin-left:10px;" onclick="myinformation()"> 我的资料</button>
+		<br />
+		<button class="button" style="margin-left:10px;" onclick="mycourse()">我的课表</button>
+        <br />
+        <button class="button" style="margin-left:10px;" onclick="manacourse()">课程管理</button>
+
+	<div>
+</body>
+</html>
